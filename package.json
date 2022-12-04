@@ -1,0 +1,38 @@
+{
+  "name": "book-store-node",
+  "version": "1.0.0",
+  "description": "node js microservices book store",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "dev-book": "nodemon books/book.server.js",
+    "dev-customer": "nodemon customers/customer.server.js",
+    "dev-order": "nodemon orders/order.server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeaamirkalimi/microservices-book-store-node.git"
+  },
+  "keywords": [
+    "node",
+    "microservices",
+    "node-microservices",
+    "aamir kalimi",
+    "book store microservices"
+  ],
+  "author": "Aamir Kalimi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeaamirkalimi/microservices-book-store-node/issues"
+  },
+  "homepage": "https://github.com/codeaamirkalimi/microservices-book-store-node#readme",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "5.13.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
