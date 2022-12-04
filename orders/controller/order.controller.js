@@ -1,8 +1,6 @@
 const Order = require("../model/Order");
 const mongoose = require("mongoose");
 const orderFactory = require("./../factory/order.factory");
-const Book = require("../../books/model/Book");
-
 
 exports.newOrder = async function (req, res) {
     try {
@@ -43,7 +41,7 @@ exports.getOrderById = async function (req, res) {
 exports.deleteOrderById = async function (req, res) {
     try {
         const { id } = req.params;
-        let order = await Order.findOneAndDelete({_id: id});
+        await Order.findOneAndDelete({_id: id});
         res.status.send("Order deleted successfully!");
     } catch (error) {
         res.status(500).send(error.data);
